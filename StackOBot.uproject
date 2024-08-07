@@ -142,6 +142,10 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "JsonBlueprintUtilities",
+			"Enabled": true
 		}
 	],
 	"EpicSampleNameHash": "255728979"
