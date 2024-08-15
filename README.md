@@ -29,8 +29,9 @@ You'll need to perform the following before getting started. Make sure you follo
 5. Build the solution.
 6. Open the StackOBot.uproject in UE.
 7. Click Edit > Plugins, and ensure the PubNub SDK is enabled.
-8. Click Edit > Project Settings and scroll down to the PLugins section and click Pubnub SDK.
-9. Add your publish and subscribes keys obtained in the next step and save.
+8. In the same plugins folder, ensure the JSON Blueprint Utilities Plugin is enabled. It should be by default.
+9. Click Edit > Project Settings and scroll down to the Plugins section and click Pubnub SDK.
+10. Add your publish and subscribe keys obtained in the next step and save. Ensure the Initialize Automatically Checkbox is checked.
 
 ### Get Your PubNub Keys
 1. Sign in to your [PubNub Dashboard](https://admin.pubnub.com/). You are now in the Admin Portal.
@@ -63,6 +64,13 @@ The following files are of focus to review for this game and pertain to PubNub F
 - WB_ChatUI: Contains the UI elements, the chat and presence count.
 - WB_ChatBox: Contains the chatbox and most of the logic of the app, including PubNub setup, channel cycling, etc.
 - WB_PresenceCount: Displays the occupancy count
+
+## Testing Chat using the Debug Console
+In the [Admin Portal](https://admin.pubnub.com/), there is a Debug Console that allows you to test your PubNub app and keys as another user. You'll need to keep in mind a few details when testing:
+- The channel architecture necessary to subscribe and receive messages as follows:
+    - group: `group.<groupname>`
+    - whisper: `whisper.<gameUUID>-<AdminPortalUUID>`. Since the debug console can't handle logic to understand if the whisper contains that message, you need to always format the channels in this order in the debug console. You can find your gameUUID by simply entering in a message in the game: the publisher is always to the left of the message. **Keep in mind for simplicity sake, the UUID changes each time you load the game**.
+- Due to the architecture of the Unreal SDK and how the Debug Console sends messages, you need to format the message in JSON format in the Debug Console with the `text` and `publisher` fields. An example: {"text":"hi there!","publisher":"amy"}
 
 ## Links
 - PubNub Unreal SDK: https://www.pubnub.com/docs/sdks/unreal
