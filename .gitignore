@@ -75,3 +75,4 @@ DerivedDataCache/*
 
 # PubNub Plugin - Get the latest version here
 Plugins/PubnubLibrary
+Plugins/Pubnub
