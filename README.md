@@ -49,10 +49,10 @@ To begin playing the game, start the game in the editor.
 * The number of currently logged in platers will be displayed at the top of the screen (Presence).
 * You can open the chat with the `Enter` key on the keyboard. This focuses the chat and darkens the chat elements.
 * Type a message and press the `Enter` key again to send the message. This display the message to you and everyone else (all = public channel)
-* There are different commands you can trigger in the chat. Enter /help in the chat to pull up these various commands
-* Type /whisper <userId> to establish a private message channel with another player. The text will become green and opens a private messaging channel between you and that associated player - no one else can see these messages.
-* Type /join <groupName> to join a group. The text will become orange and opens a group channel between you and that group after you start to type messages.
-* Type /leave <groupName> to leave the specified group.
+* There are different commands you can trigger in the chat. Enter `/help` in the chat to pull up these various commands
+* Type `/whisper <userId>` to establish a private message channel with another player. The text will become green and opens a private messaging channel between you and that associated player - no one else can see these messages.
+* Type `/join <groupName>` to join a group. The text will become orange and opens a group channel between you and that group after you start to type messages.
+* Type `/leave <groupName>` to leave the specified group.
 * You can cycle between channels with the `Left CNTRL` key on the keyboard. Keep in mind you need to have at least one other channel you are associated with before cycling channels.
 * Both the open chat and channel cycling key can be changed to another key or button the gamepad via the Input Mapping Context located in Content > StackOBot > Input > IMC_ThirdPerson. This will also change the text displayed on the screen for what key to press to open or cycle channels.
 
