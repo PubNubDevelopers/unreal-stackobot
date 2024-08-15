@@ -1,9 +1,7 @@
 PubNub's Enahnced Stack'O'Bot Game with In-Game Chat, Online Presence, and More!
 ====================================
 Welcome to PubNub's Stack'O'Bot Game Enahnced with our Unreal SDK!
-<p align="middle">
-  <img src="/Media/stackbot-in-game.png"/>
-</p>
+![Stack O Bot Game](./Media/stackobot-chat-messages.png)
 
 This is an Unreal Engine game built using the [Stack'O'Bot](https://www.unrealengine.com/marketplace/en-US/product/stack-o-bot?sessionInvalidated=true) game, a thirdperson sandbox project built by Epic Games to showcase UE 5 features.
 
@@ -45,9 +43,7 @@ You'll need to perform the following before getting started. Make sure you follo
 You are now ready to start playing the game!
 
 ## Playing the Game
-<p align="middle">
-  <img src="/Media/stackbot-chat-messages.png"/>
-</p>
+![Stack O Bot Playing the game](./Media/stackobot-in-game.png)
 
 To begin playing the game, start the game in the editor. 
 * The number of currently logged in platers will be displayed at the top of the screen (Presence).
