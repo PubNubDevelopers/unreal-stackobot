@@ -3,6 +3,13 @@
 	"EngineAssociation": "5.4",
 	"Category": "Samples",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "StackOBot",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ControlRig",
@@ -135,6 +142,10 @@
 				"Mac",
 				"Linux"
 			]
+		},
+		{
+			"Name": "JsonBlueprintUtilities",
+			"Enabled": true
 		}
 	],
 	"EpicSampleNameHash": "255728979"
