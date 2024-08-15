@@ -27,7 +27,7 @@ You'll need to perform the following before getting started. Make sure you follo
 3. Generate C++ project files (as we need to add the SDK to the build file) by rick clicking on your `.uproject` file.
 4. The private module dependency has already been added for you in `Source/_{YourProject}_/_{YourProject}_.Build.cs`.
 5. Build the solution.
-6. Open the project in UE.
+6. Open the StackOBot.uproject in UE.
 7. Click Edit > Plugins, and ensure the PubNub SDK is enabled.
 8. Click Edit > Project Settings and scroll down to the PLugins section and click Pubnub SDK.
 9. Add your publish and subscribes keys obtained in the next step and save.
